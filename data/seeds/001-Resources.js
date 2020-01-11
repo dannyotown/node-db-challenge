@@ -8,20 +8,17 @@ exports.seed = function(knex) {
         {
           id: 1,
           Name: "Spanish Book",
-          Description: "Get Spanish Book",
-          Project_ID: 1
+          Description: "Get Spanish Book"
         },
         {
           id: 2,
           Name: "Spanish Tutor",
-          Description: "Get spanish Tutor",
-          Project_ID: 1
+          Description: "Get spanish Tutor"
         },
         {
           id: 3,
           Name: "Coding Book",
-          Description: "Javascript Study Book",
-          Project_ID: 2
+          Description: "Javascript Study Book"
         }
       ]);
     });

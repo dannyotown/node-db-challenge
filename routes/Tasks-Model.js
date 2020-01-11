@@ -13,8 +13,8 @@ function getTasks() {
     );
 }
 
-function createTask(body) {
-  db("Tasks").insert(body);
+async function createTask(body) {
+  await db("Tasks").insert(body);
   return getTasks();
 }
 
