@@ -21,6 +21,13 @@ router.get(`/`, async (req, res, next) => {
 router.post(`/`, async (req, res, next) => {
   try {
     let projects = await projectsModel.createProject(req.body);
+    projects.forEach(project => {
+      if (project.Completed == 0) {
+        project.Completed = false;
+      } else {
+        project.Completed = true;
+      }
+    });
     res.status(201).json(projects);
   } catch (err) {
     next(err);
